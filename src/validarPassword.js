@@ -19,6 +19,10 @@ function validarPassword(password, usernameOpcional) {
         {
             cumple: (p) => /[!@#$%^&*(),.?":{}|<>]/.test(p),
             mensaje: 'La contraseña debe contener al menos 1 símbolo especial'
+        },
+        {
+            cumple: (p) => !p.includes(' '),
+            mensaje: 'La contraseña no debe contener espacios en blanco'
         }
     ];
 

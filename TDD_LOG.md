@@ -16,7 +16,7 @@
 | 5 | Ciclo 5 | expect(resultado.esValida).toBe(false) | Implementacion de minuscula | no | Tests:       5 passed, 5 total |
 | 6 | Ciclo 6 | const resultado = validarPassword('aANSJADNJKNADSJ') | Implementacion de regla de 1 numero | no | Tests:       6 passed, 6 total |
 | 7 | Ciclo 7 | const resultado = validarPassword('aANSJADNJKNADSJ1') | Implementacion de regla de simbolos especiales | no | Tests:       7 passed, 7 total |
-| 7 | | | | | |
+| 7 | Cilo 8 | const resultado = validarPassword('aANSJADNJKNADSJ1 ') | Implementacion de regla de espacios | no | Tests:       8 passed, 8 total |
 | 8 | | | | | |
 | 9 | | | | | |
 | 10 | | | | | |
