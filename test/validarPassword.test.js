@@ -17,7 +17,7 @@ describe('Ciclo 2: Tiene al menos 8 caracteres', () => {
 
 describe('Ciclo 3: Tiene al menos 8 caracteres', () => {
     test('esValida debe retornar true si tiene 8 o mas caracteres', () => {
-        const resultado = validarPassword('A123456789a');
+        const resultado = validarPassword('A123456789a!');
         expect(resultado.esValida).toBe(true);
     });
 });
