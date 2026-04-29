@@ -9,7 +9,7 @@
 > Puede agregar más filas si lo necesita.
 | Ciclo | Test agregado (nombre y objetivo) | Evidencia Rojo (error/salida) | Cambio mínimo aplicado (Verde) | Refactor realizado (o “No aplicó”) | Evidencia final (tests en verde) |
 |------:|-----------------------------------|--------------------------------|----------------------------------|-------------------------------------|---------------------------------|
-| 1 | Validar estructura de retorno | validarPassword is not defined | | | |
+| 1 | Validar estructura de retorno | validarPassword is not defined | Cree la funcion | No aplico | Tests: 1 passed, 1 total |
 | 2 | | | | | |
 | 3 | | | | | |
 | 4 | | | | | |
