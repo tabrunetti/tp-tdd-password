@@ -11,7 +11,7 @@
 |------:|-----------------------------------|--------------------------------|----------------------------------|-------------------------------------|---------------------------------|
 | 1 | Validar estructura de retorno | validarPassword is not defined | Cree la funcion | No aplico | Tests: 1 passed, 1 total |
 | 2 | Ciclo 3 | Expected: true, Received: False | Validacion de longitud | No | Tests: 3 passed, 3 total |
-| 3 | | | | | |
+| 3 | Ciclo 4 | expect(resultado.esValida).toBe(false) | Validacion de mayuscula | | |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |

@@ -21,3 +21,10 @@ describe('Ciclo 3: Tiene al menos 8 caracteres', () => {
         expect(resultado.esValida).toBe(true);
     });
 });
+
+describe('Ciclo 4: Tiene al menos 1 mayuscula', () => {
+    test('esValida debe retornar false si no tiene al menos una mayuscula', () => {
+        const resultado = validarPassword('asdeqdjaks');
+        expect(resultado.esValida).toBe(false);
+    });
+});
