@@ -7,6 +7,10 @@ function validarPassword(password, usernameOpcional) {
         {
             cumple: (p) => /[A-Z]/.test(p),
             mensaje: 'La contraseña debe contener al menos 1 letra mayúscula'
+        },
+        {
+            cumple: (p) => /[a-z]/.test(p),
+            mensaje: 'La contraseña debe contener al menos 1 letra minúscula'
         }
     ];
 
