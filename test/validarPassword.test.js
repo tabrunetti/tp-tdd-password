@@ -49,3 +49,10 @@ describe('Ciclo 7: tiene al menos 1 simbolo especial', () => {
         expect(resultado.esValida).toBe(false);
     });
 });
+
+describe('Ciclo 8: Sin espacios en blanco', () => {
+    test('esValida debe retornar false si tiene espacios en blanco', () => {
+        const resultado = validarPassword('aANSJADNJKNADSJ1');
+        expect(resultado.errores).toContain('La contraseña no debe contener espacios en blanco');
+    });
+});
