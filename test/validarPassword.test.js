@@ -28,3 +28,10 @@ describe('Ciclo 4: Tiene al menos 1 mayuscula', () => {
         expect(resultado.esValida).toBe(false);
     });
 });
+
+describe('Ciclo 5: tiene al menos 1 minuscula', () => {
+    test('esValida debe retornar false si no tiene al menos una minuscula', () => {
+        const resultado = validarPassword('ANSJADNJKNADSJ');
+        expect(resultado.esValida).toBe(false);
+    });
+});
