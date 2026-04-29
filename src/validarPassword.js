@@ -1,9 +1,16 @@
 function validarPassword(password, usernameOpcional) {
-    const errores = [];
+    const reglas = [
+        {
+            cumple: (p) => p.length >= 8,
+            mensaje: 'La contraseña debe tener al menos 8 caracteres'
+        },
+        {
+            cumple: (p) => /[A-Z]/.test(p),
+            mensaje: 'La contraseña debe contener al menos 1 letra mayúscula'
+        }
+    ];
 
-    if (password.length < 8) {
-        errores.push('La contraseña 8 o mas caracteres');
-    }
+    const errores = reglas.filter(regla => !regla.cumple(password)).map(regla => regla.mensaje);
 
     return {
         esValida: errores.length === 0,
