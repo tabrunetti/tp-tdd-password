@@ -35,3 +35,10 @@ describe('Ciclo 5: tiene al menos 1 minuscula', () => {
         expect(resultado.esValida).toBe(false);
     });
 });
+
+describe('Ciclo 6: tiene al menos 1 numero', () => {
+    test('esValida debe retornar false si no tiene numeros', () => {
+        const resultado = validarPassword('aANSJADNJKNADSJ');
+        expect(resultado.esValida).toBe(false);
+    });
+});
