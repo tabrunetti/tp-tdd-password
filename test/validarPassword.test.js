@@ -7,3 +7,17 @@ describe('Ciclo 1: Estructura básica', () => {
         expect(Array.isArray(resultado.errores)).toBe(true);
     });
 });
+
+describe('Ciclo 2: Tiene al menos 8 caracteres', () => {
+    test('esValida debe retornar false si tiene menos de 8 caracteres', () => {
+        const resultado = validarPassword('1234567');
+        expect(resultado.esValida).toBe(false);
+    });
+});
+
+describe('Ciclo 3: Tiene al menos 8 caracteres', () => {
+    test('esValida debe retornar true si tiene 8 o mas caracteres', () => {
+        const resultado = validarPassword('123456789');
+        expect(resultado.esValida).toBe(true);
+    });
+});
