@@ -13,7 +13,7 @@
 | 2 | Ciclo 3 | Expected: true, Received: False | Validacion de longitud | No | Tests: 3 passed, 3 total |
 | 3 | Ciclo 4 | expect(resultado.esValida).toBe(false) | Validacion de mayuscula | Cambios en la funcion para poder hacer escalables los requerimientos |Tests: 4 passed, 4 total |
 | 4 | Ciclo 5 | expect(resultado.esValida).toBe(false) | Implementacion de minuscula | no | Tests:       5 passed, 5 total |
-| 5 | Ciclo 6 | expect(resultado.esValida).toBe(false) |  | | |
+| 5 | Ciclo 6 | const resultado = validarPassword('aANSJADNJKNADSJ') | Implementacion de regla de 1 numero | no | Tests:       6 passed, 6 total |
 | 6 | | | | | |
 | 7 | | | | | |
 | 8 | | | | | |
