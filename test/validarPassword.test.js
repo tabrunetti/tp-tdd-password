@@ -42,3 +42,10 @@ describe('Ciclo 6: tiene al menos 1 numero', () => {
         expect(resultado.esValida).toBe(false);
     });
 });
+
+describe('Ciclo 7: tiene al menos 1 simbolo especial', () => {
+    test('esValida debe retornar false si no simbolo especial', () => {
+        const resultado = validarPassword('aANSJADNJKNADSJ1');
+        expect(resultado.esValida).toBe(false);
+    });
+});
