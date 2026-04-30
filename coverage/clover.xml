@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1777510500461" clover="3.2.0">
+  <project timestamp="1777510500462" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11" elements="26" coveredelements="26" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
+    <file name="validarPassword.js" path="C:\Users\tiago\Desktop\Facu\PO2\TP TDD - Brunetti\src\validarPassword.js">
+      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11"/>
+      <line num="2" count="11" type="stmt"/>
+      <line num="4" count="11" type="stmt"/>
+      <line num="8" count="11" type="stmt"/>
+      <line num="12" count="11" type="stmt"/>
+      <line num="16" count="11" type="stmt"/>
+      <line num="20" count="11" type="stmt"/>
+      <line num="24" count="11" type="stmt"/>
+      <line num="29" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="35" count="11" type="stmt"/>
+      <line num="40" count="88" type="stmt"/>
+      <line num="42" count="11" type="stmt"/>
+      <line num="48" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -6,7 +6,8 @@
     Framework de Testing: Jest.<br> 
         Instalacion: npm install<br>
         Ejecucion: npm test<br>
-    Metodologia: TDD (Rojo -> Verde -> Refactor).
+    Metodologia: TDD (Rojo -> Verde -> Refactor).<br>
+    npm test -- --coverage: 100%<br>
 
 Decisiones de Diseno y Supuestos<br>
     Patron de Reglas: Se utilizo un array de objetos para definir las reglas, permitiendo que el sistema sea escalable y facil de mantener.<br>
