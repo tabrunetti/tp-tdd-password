@@ -19,7 +19,7 @@
 | 8 | Cilo 8 | const resultado = validarPassword('aANSJADNJKNADSJ1 ') | Implementacion de regla de espacios | no | Tests:       8 passed, 8 total |
 | 9 | Ciclo 9 | const resultado = validarPassword('Tiago12345!', 'tiago') | Implementacion de regla de no user en pass | no | Tests:       9 passed, 9 total |
 | 10 | Ciclo 10 | | | no | Tests:       10 passed, 10 total |
-| 11 | | | | | |
+| 11 | Ciclo 11 | const resultado = validarPassword('Abc111!def'); expect(resultado.esValida).toBe(false); expect(resultado.errores).toContain('La contrasena no puede contener 3 caracteres iguales consecutivos') | Implementacion de regla de caracteres consecutivos | no | Tests:       11 passed, 11 total |
 | 12 | | | | | |
 | 13 | | | | | |
 | 14 | | | | | |
