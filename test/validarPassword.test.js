@@ -53,7 +53,7 @@ describe('Ciclo 7: tiene al menos 1 simbolo especial', () => {
 describe('Ciclo 8: Sin espacios en blanco', () => {
     test('esValida debe retornar false si tiene espacios en blanco', () => {
         const resultado = validarPassword('aANSJADNJKNADSJ1 ');
-        expect(resultado.errores).toContain('La contraseña no debe contener espacios en blanco');
+        expect(resultado.errores).toContain('La contrasena no debe contener espacios en blanco');
     });
 });
 
@@ -61,15 +61,7 @@ describe('Ciclo 9: No incluir username', () => {
     test('esValida debe retornar false si la contraseña contiene el username', () => {
         const resultado = validarPassword('Tiago12345!', 'tiago'); 
         expect(resultado.esValida).toBe(false);
-        expect(resultado.errores).toContain('La contraseña no puede incluir el nombre de usuario');
+        expect(resultado.errores).toContain('La contrasena no puede incluir el nombre de usuario');
     });
 
 });
-/*
-    test('Debe ser válida si no se informa usernameOpcional', () => {
-        const resultado = validarPassword('Abc!12345'); 
-        const errorUsername = 'La contraseña no puede incluir el nombre de usuario';
-        expect(resultado.errores).not.toContain(errorUsername);
-    });
-});
-*/
