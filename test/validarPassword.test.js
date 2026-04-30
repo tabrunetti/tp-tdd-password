@@ -65,3 +65,12 @@ describe('Ciclo 9: No incluir username', () => {
     });
 
 });
+
+describe('Ciclo 10: No incluir username', () => {
+    test('Debe ser valida si no se informa usernameOpcional', () => {
+        const resultado = validarPassword('Abc!12345'); 
+        const errorUsername = 'La contrasena no puede incluir el nombre de usuario';
+        expect(resultado.errores).not.toContain(errorUsername);
+    });
+
+});
