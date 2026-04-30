@@ -30,6 +30,10 @@ function validarPassword(password, usernameOpcional) {
                 return !p.toLowerCase().includes(usernameOpcional.toLowerCase());
             },
             mensaje: 'La contrasena no puede incluir el nombre de usuario'
+        },
+        {
+            cumple: (p) => !/(.)\1{2,}/.test(p),
+            mensaje: 'La contrasena no puede contener 3 caracteres iguales consecutivos'
         }
     ];
 

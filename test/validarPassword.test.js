@@ -74,3 +74,11 @@ describe('Ciclo 10: No incluir username', () => {
     });
 
 });
+
+describe('Ciclo 11: No caracteres consecutivos', () => {
+    test('esValida debe retornarfalse si tiene 3 caracteres iguales seguidos', () => {
+        const resultado = validarPassword('Abc111!def'); 
+        expect(resultado.esValida).toBe(false);
+        expect(resultado.errores).toContain('La contrasena no puede contener 3 caracteres iguales consecutivos');
+    });
+});
