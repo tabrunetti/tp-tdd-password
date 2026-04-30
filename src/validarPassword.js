@@ -23,6 +23,13 @@ function validarPassword(password, usernameOpcional) {
         {
             cumple: (p) => !p.includes(' '),
             mensaje: 'La contraseña no debe contener espacios en blanco'
+        },
+        {
+            cumple: (p) => {
+                if (!usernameOpcional) return true; // Si no hay usuario, la regla se cumple
+                return !p.toLowerCase().includes(usernameOpcional.toLowerCase());
+            },
+            mensaje: 'La contraseña no puede incluir el nombre de usuario'
         }
     ];
 
